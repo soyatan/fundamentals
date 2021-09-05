@@ -8,7 +8,10 @@ import {
 
 @Component({
   selector: 'event-thumbnail',
-  template: `<div class="well hoverwell thumbnail">
+  template: `<div
+    [routerLink]="['/events', event.id]"
+    class="well hoverwell thumbnail"
+  >
     <h2>
       {{ event.name }}
     </h2>
